@@ -2,8 +2,8 @@ pipeline {
   agent any
 
   environment {
-    // If you’re using a remote Docker host, you can set DOCKER_HOST here
-    // DOCKER_HOST = "tcp://dockerhost:2375"
+    IMAGE_NAME = "docker-yaml-demo"
+        IMAGE_TAG  = "latest"
   }
 
   stages {
