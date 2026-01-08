@@ -1,0 +1,13 @@
+image:
+  name: cicd-demo-web
+  tag: "1.0.${BUILD_NUMBER}"
+
+build:
+  context: "."
+  dockerfile: "Dockerfile"
+
+registry:
+  enabled: false
+  url: "localhost:5000"   # example
+  repository: "cicd-demo" # registry repo/namespace
+
